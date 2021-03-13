@@ -1,75 +1,62 @@
 /* Solo para testear */
 body{background-color:steelblue}
 
-/* 
-    Y aquí la propuesta de scrollbar c: 
-    la idea es que se vea minimalista y sofisticada, como lo es la página.
-    Así es que el thumb (el puntero) habrá de tener una forma diferente, ni monótona, ni cuadrada.
-    Y el track (la barra donde el puntero se desplaza), habrá de ser transparente,
-    dando todo el protagonismo al thumb, que será de colores simples pero agradablemente contrastantes.
-*/
-
-/* La idea es que sea un poco ancha, para que sea visible y estética */
+/* Para la scrollbar UwU */
 ::-webkit-scrollbar{
-    width: 20.666px; /* Ancho de la scrollbar */
-    background-color: transparent; /* Bordes transparentes */
+    width: 16px;
+    background-color: #000000;
 }
-
-/* TRACK (la idea es que sea invisible y resalte ante todo un thumb minimalista y estético) */
 ::-webkit-scrollbar-track{
-    border-radius: 10px; /* Bordes del track redondos (por si declinan la transparencia) */
-    background-color: transparent; /* Track transparente */
+    -webkit-box: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    -Moz-border-radius-bottomRight: 100px;
+    border-bottom-right-radius: 100px;
+    -Moz-border-radius-topLeft: 100px;
+    border-top-left-radius: 100px;
+    background-color: #000000;
 }
-
-/* TRACK: Efectos al pasarle el mouse por encima */
 ::-webkit-scrollbar-track:hover{
-    background-color: #0000001e; /* Un ligero y casi invisible gris al pasar el mouse por la scrollbar */
-    /* 
-        Con la intención de aumentar la sensación de INTERACCIÓN entre usuario/web,
-        se puede agregar este hover para dar más sensación de "poder" al usuario
-        al pasar el mouse por encima del scrollbar. Si se piensa que este ligero flash
-        quita estética al scrollbar y por ende a la página, este comando puede comentarse (omitirse).
-     */
+    background-color: #000000;
 }
-
-/* TRACK: Efectos al clickearla o dejarla clickeada */
 ::-webkit-scrollbar-track:active{
-    background-color: #55555544; /* Un gris más intenso (pero aún traslúcido) cuando al usuario clickee y mantenga */
-    /* Con este comando, lo mismo que con el efecto anterior, es opcional. Lo importante aquí es el THUMB (pienso yo) */
+    background-color: #555555;
 }
-
-/* THUMB: Ahora sí se dejó venir e,e */
 ::-webkit-scrollbar-thumb{
-    background-color: rgba(255, 255, 255, 0.507); /* Color "por defecto" del thumb, un blanco-grisáceo traslúcido pero contrastante */
-    /* Los siguientes parámetros son para darle una forma "sofisticada" al thumb (es 2021, ¿quién sigue usando thumbs cuadrados? e,e) */
-    -Moz-border-radius-bottomRight: 50px;
-    border-bottom-right-radius: 50px;
-    -Moz-border-radius-topLeft: 50px;
-    border-top-left-radius: 50px;
-    /* woldev.co tiene, en general, una paleta de colores oscura, un thumb blanquzco contrastaría y eso no le vendría mal */
-}
+    /*Estilo metalizado  para el thumb*/
 
-/* THUMB: Efectos al pasarle el mouse por encima */
+    /* border-radius: 10px;
+    background-color: #d4d4d4;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent); */
+    
+    /*Estilo sofisticado, papá 7u7*/
+
+    background: #434343;
+    -Moz-border-radius-bottomRight: 100px;
+    border-bottom-right-radius: 100px;
+    -Moz-border-radius-topLeft: 100px;
+    border-top-left-radius: 100px;
+    box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(245, 245, 245, 0.753); /* Un blanco aun grisáceo, pero un poco más blanco y un poco menos traslúcido */
-    /* Los detalles son los que enamoran */
-}
+    /*Estilo metalizado
 
-/* THUMB: Efectos al clickearlo y/o arrastrarlo */
+    background-color: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent);
+    
+    /*Estilo sofisticado 7u7*/
+    box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+    background-color: rgba(138, 138, 138, 0.89);
+}
 ::-webkit-scrollbar-thumb:active{
-    background-color: rgb(255, 255, 255); /* Totalmente blanco, cero transparencia; aún discreto... Pero con clase. */
-    /* 
-    jayyy, aparato v:< Esta es la magia, papá: 
-    cuando el usuario AGARRE el thumb, 
-    este cambiará drásticamente a BLANCO PLANO,
-    dando la SENSACIÓN DE QUE SE PRENDIÓ,
-    como una bombilla, como algo activable.
-    He ahí la interactividad... ¿No? xd
-      */
+    /*Estilo metalizado e.e*/
+    /* background-color: rgb(252, 243, 229);
+    
+    /*Estilo sofisticado >:)))*/
+    box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+    background-image: -webkit-linear-gradient(180deg,transparent,rgb(255, 255, 255) 100%, transparent);
+    background-color: rgb(207, 207, 207);
 }
-
+/*FINAL DE LA SCROLLBAR xd*/
 /*
-    FINAL DE LA SCROLLBAR xd
     Saludos, WOLDEV.
 */
 
