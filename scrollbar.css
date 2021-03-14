@@ -1,35 +1,27 @@
-/* Solo para testear */
+﻿/* Solo para testear */
 body{background-color:steelblue}
 
 /* Para la scrollbar UwU */
 ::-webkit-scrollbar{
     width: 16px;
-    background-color: #000000;
+    background-color: transparent;
 }
 ::-webkit-scrollbar-track{
-    -webkit-box: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    -webkit-box: transparent;
     -Moz-border-radius-bottomRight: 100px;
     border-bottom-right-radius: 100px;
     -Moz-border-radius-topLeft: 100px;
     border-top-left-radius: 100px;
-    background-color: #000000;
+    background-color: #00000000;
 }
 ::-webkit-scrollbar-track:hover{
-    background-color: #000000;
+    background-color: transparent;
 }
 ::-webkit-scrollbar-track:active{
     background-color: #555555;
 }
 ::-webkit-scrollbar-thumb{
-    /*Estilo metalizado  para el thumb*/
-
-    /* border-radius: 10px;
-    background-color: #d4d4d4;
-    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent); */
-    
-    /*Estilo sofisticado, papá 7u7*/
-
-    background: #434343;
+    background: #434343a9;
     -Moz-border-radius-bottomRight: 100px;
     border-bottom-right-radius: 100px;
     -Moz-border-radius-topLeft: 100px;
@@ -37,20 +29,10 @@ body{background-color:steelblue}
     box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
 }
 ::-webkit-scrollbar-thumb:hover{
-    /*Estilo metalizado
-
-    background-color: rgb(255, 255, 255);
-    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent);
-    
-    /*Estilo sofisticado 7u7*/
     box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
     background-color: rgba(138, 138, 138, 0.89);
 }
 ::-webkit-scrollbar-thumb:active{
-    /*Estilo metalizado e.e*/
-    /* background-color: rgb(252, 243, 229);
-    
-    /*Estilo sofisticado >:)))*/
     box-shadow:inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
     background-image: -webkit-linear-gradient(180deg,transparent,rgb(255, 255, 255) 100%, transparent);
     background-color: rgb(207, 207, 207);
